@@ -19,7 +19,7 @@
 
 #include <iostream>
 #include <cmath>
-using namespace std;
+// using namespace std;
 
 // Print all prime numbers between 2 given numbers
 bool isPrime(int num)
@@ -52,7 +52,7 @@ void primesbetween(int a, int b)
     {
         if (isPrime(i))
         {
-            cout << i << endl;
+            std::cout << i << std::endl;
         }
     }
 }
@@ -63,17 +63,17 @@ void fib(int num)
     size_t t1, t2;
     t1 = 0;
     t2 = 1;
-    cout << t1 << endl;
+    std::cout << t1 << std::endl;
     for (int i = 1; i < num; i++)
     {
         if (i == 1)
         {
-            cout << t2 << endl;
+            std::cout << t2 << std::endl;
             continue;
         }
 
         size_t nextTerm = t1 + t2;
-        cout << nextTerm << endl;
+        std::cout << nextTerm << std::endl;
         t1 = t2;
         t2 = nextTerm;
     }
@@ -106,9 +106,9 @@ void pascalTriagle(int n)
     {
         for (int j = 0; j <= i; j++)
         {
-            cout << nCr(i, j) << " ";
+            std::cout << nCr(i, j) << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
@@ -126,7 +126,7 @@ size_t sumUptoN(int n)
 // check pythogorian triplet
 bool pythagorianTriplet(int x, int y, int z)
 {
-    int a = max(x, max(y, z));
+    int a = std::max(x, std::max(y, z));
     int b, c;
 
     if (a == x)
@@ -169,7 +169,7 @@ int binary2Decimal(int binary)
     {
         int digit = binary % 10;
         decimal += digit * pow(2, placeV);
-        // cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << endl;
+        // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         binary /= 10;
         placeV += 1;
     }
@@ -185,7 +185,7 @@ int octal2Decimal(int octal)
     {
         int digit = octal % 10;
         decimal += digit * pow(8, placeV);
-        // cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << endl;
+        // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         octal /= 10;
         placeV += 1;
     }
@@ -193,7 +193,7 @@ int octal2Decimal(int octal)
 }
 
 // 3)hexadecimal to decimal
-int hex2Decimal(string hex)
+int hex2Decimal(std::string hex)
 {
     int decimal = 0;
     int size = hex.size();
@@ -214,7 +214,7 @@ int hex2Decimal(string hex)
             decimal += (hex[i] - 'a' + 10) * pow(16, placeV);
         }
 
-        //		cout<<decimal<<"\t"<<hex<<"\t"<<placeV<<"\t"<<size<<"\t"<<">"<<hex[i]<<"<"<<endl;
+        //		std::cout<<decimal<<"\t"<<hex<<"\t"<<placeV<<"\t"<<size<<"\t"<<">"<<hex[i]<<"<"<<std::endl;
         placeV++;
     }
     return decimal;
@@ -229,7 +229,7 @@ int decimal2Binary(int decimal)
     {
         int digit = decimal % 2;
         binary += digit * placeV;
-        // cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << endl;
+        // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         decimal /= 2;
         placeV *= 10;
     }
@@ -245,7 +245,7 @@ int decimal2Octal(int decimal)
     {
         int digit = decimal % 8;
         binary += digit * placeV;
-        // cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << endl;
+        // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         decimal /= 8;
         placeV *= 10;
     }
@@ -253,9 +253,9 @@ int decimal2Octal(int decimal)
 }
 
 // 6)decimal to hexadecimal
-string decimal2hex(int decimal)
+std::string decimal2hex(int decimal)
 {
-    string hex = "";
+    std::string hex = "";
     for (int i = 0; decimal > 0; i++)
     {
         char a;
@@ -268,7 +268,7 @@ string decimal2hex(int decimal)
         {
             hex.push_back('A' + digit - 10);
         }
-        // cout<<"#{"<<decimal<<"\t>"<<hex<<"<\t"<<digit<<"\t>"<<hex[i]<<"<\t}#"<<endl;
+        // std::cout<<"#{"<<decimal<<"\t>"<<hex<<"<\t"<<digit<<"\t>"<<hex[i]<<"<\t}#"<<std::endl;
         decimal /= 16;
     }
     int size = hex.size();
@@ -277,7 +277,7 @@ string decimal2hex(int decimal)
         char temp = hex[i];
         hex[i] = hex[size - i - 1];
         hex[size - i - 1] = temp;
-        // cout<<size<<endl;
+        // std::cout<<size<<std::endl;
     }
     return hex;
 }
@@ -286,9 +286,9 @@ string decimal2hex(int decimal)
 int binaryAdd(int a, int b)
 {
     int carry = 0, sum = 0, place = 1;
-    int maxi = max(a, b);
+    int maxi = std::max(a, b);
 
-    // cout << "x\ty\tdigit\tcarry\tsum\tplace" << endl;
+    // std::cout << "x\ty\tdigit\tcarry\tsum\tplace" << std::endl;
     while (maxi > 0 or carry == 1)
     {
         int x, y, digit = 0;
@@ -310,7 +310,7 @@ int binaryAdd(int a, int b)
             digit = 1;
         }
 
-        // cout << x << "\t" << y << "\t" << digit << "\t" << carry << "\t" << sum << "\t" << place << endl;
+        // std::cout << x << "\t" << y << "\t" << digit << "\t" << carry << "\t" << sum << "\t" << place << std::endl;
         sum = sum + digit * place;
 
         place *= 10;
@@ -332,28 +332,28 @@ int main()
     // fib(a);
 
     // ans = factorial(a);
-    // cout << ans << endl;
+    // std::cout << ans << std::endl;
 
     // ans = nCr(a, b);
-    // cout << ans << endl;
+    // std::cout << ans << std::endl;
 
     // pascalTriagle(a);
 
-    // cout << sumUptoN(10) << endl;
+    // std::cout << sumUptoN(10) << std::endl;
 
     // if (pythagorianTriplet(4, 3, 5))
     // {
-    //     cout << "true" << endl;
+    //     std::cout << "true" << std::endl;
     // }
 
-    // cout << binaryAdd(10101, 11010) << endl;
-    cout << "101101 :" << binary2Decimal(101101) << endl;
-    cout << "45     :" << octal2Decimal(45) << endl;
-    cout << "1CF    :" << hex2Decimal("1CF") << endl;
-    cout << "1cf    :" << hex2Decimal("1cf") << endl;
-    cout << "100    :" << decimal2hex(100) << endl;
-    cout << "45     :" << decimal2Binary(45) << endl;
-    cout << "37     :" << decimal2Octal(37) << endl;
+    // std::cout << binaryAdd(10101, 11010) << std::endl;
+    std::cout << "101101 :" << binary2Decimal(101101) << std::endl;
+    std::cout << "45     :" << octal2Decimal(45) << std::endl;
+    std::cout << "1CF    :" << hex2Decimal("1CF") << std::endl;
+    std::cout << "1cf    :" << hex2Decimal("1cf") << std::endl;
+    std::cout << "100    :" << decimal2hex(100) << std::endl;
+    std::cout << "45     :" << decimal2Binary(45) << std::endl;
+    std::cout << "37     :" << decimal2Octal(37) << std::endl;
 
     return 0;
 }
