@@ -168,7 +168,7 @@ int binary2Decimal(int binary)
     while (binary > 0)
     {
         int digit = binary % 10;
-        decimal += digit * pow(2, placeV);
+        decimal += digit * (int)(pow(2, placeV)+ 0.5);
         // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         binary /= 10;
         placeV += 1;
@@ -184,7 +184,7 @@ int octal2Decimal(int octal)
     while (octal > 0)
     {
         int digit = octal % 10;
-        decimal += digit * pow(8, placeV);
+        decimal += digit * (int)(pow(8, placeV)+ 0.5);
         // std::cout << digit << "\t" << decimal << "\t" << binary << "\t" << placeV << "\t" << digit * pow(2, placeV) << std::endl;
         octal /= 10;
         placeV += 1;
@@ -203,15 +203,15 @@ int hex2Decimal(std::string hex)
         int check = 0;
         if (hex[i] >= '0' and hex[i] <= '9')
         {
-            decimal += (hex[i] - '0') * pow(16, placeV);
+            decimal += (hex[i] - '0') * (int)(pow(16, placeV)+ 0.5);
         }
         else if (hex[i] >= 'A' and hex[i] <= 'F')
         {
-            decimal += (hex[i] - 'A' + 10) * pow(16, placeV);
+            decimal += (hex[i] - 'A' + 10) * (int)(pow(16, placeV)+ 0.5);
         }
         else if (hex[i] >= 'a' and hex[i] <= 'f')
         {
-            decimal += (hex[i] - 'a' + 10) * pow(16, placeV);
+            decimal += (hex[i] - 'a' + 10) * (int)(pow(16, placeV)+ 0.5);
         }
 
         //		std::cout<<decimal<<"\t"<<hex<<"\t"<<placeV<<"\t"<<size<<"\t"<<">"<<hex[i]<<"<"<<std::endl;
