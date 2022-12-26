@@ -1,0 +1,36 @@
+{
+    "workbench.colorTheme": "Material Night Eighties",
+    "workbench.startupEditor": "none",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "files.autoSave": "afterDelay",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.mouseWheelZoom": true,
+    "tabnine.experimentalAutoImports": true,
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.clearPreviousOutput": true,
+    "editor.codeActionsOnSave": {
+    
+    },
+    "code-runner.executorMap": {
+
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        //"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dirWithoutTrailingSlash && g++ $fileName -o $fileNameWithoutExt && echo && ./$fileNameWithoutExt",
+        
+    }
+   // "code-runner.terminalRoot": "/"
+    
+}
