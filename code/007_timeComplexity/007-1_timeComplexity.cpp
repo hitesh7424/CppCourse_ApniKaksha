@@ -255,7 +255,6 @@ time complexity of g1(n) + g2(n) = O(n^4 + n^2)
 */
 
 #include <iostream>
-#include <ctime>
 
 int main()
 {
