@@ -258,7 +258,6 @@ time complexity of g1(n) + g2(n) = O(n^4 + n^2)
 
 int main()
 {
-
     std::cout << "Namaste" << std::endl;
     return 0;
 }
