@@ -104,24 +104,22 @@ int binarySearch(int arr[], int size, int key)
 
 int main()
 {
-    const int size = 483647;
+    int size;
     // std::cout << "Enter size of array" << std::endl;
-    std::cout << "Enter key 0-" << INT_MAX << std::endl;
+    std::cin >> size;
     int array[size];
     // std::cout << "Enter elements of array" << std::endl;
-    std::cout << "Enter key 0-" << INT_MAX << std::endl;
+
     for (size_t i = 0; i < size; i++)
     {
-        array[i] = i;
+        std::cin >> array[i];
     }
 
     int key;
-    std::cout << "Enter key 0-" << INT_MAX << std::endl;
+    // std::cout << "Enter key" << std::endl;
     std::cin >> key;
 
-    std::cout << "linearSearch started" << std::endl;
     std::cout << linearSearch(array, size, key) << std::endl;
-    std::cout << "binarySearch started" << std::endl;
     std::cout << binarySearch(array, size, key) << std::endl;
 
     return 0;
