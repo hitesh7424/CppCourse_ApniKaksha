@@ -119,8 +119,8 @@ int main()
     // std::cout << "Enter key" << std::endl;
     std::cin >> key;
 
-    std::cout << linearSearch(array, size, key) << std::endl;
-    std::cout << binarySearch(array, size, key) << std::endl;
+    std::cout << "linearSearch :" << linearSearch(array, size, key) << std::endl;
+    std::cout << "binarySearch :" << binarySearch(array, size, key) << std::endl;
 
     return 0;
 }
