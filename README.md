@@ -62,11 +62,13 @@ g++ filenme.cpp -o filenme && ./filename
 
 ## Important
 
->  `१२३४५६७८९०`
-2. add a empty line at the end to avoid warning: no newline at end of file
-3. default value cannot be declared in declaration of function
+> Hindi Digits: `१२३४५६७८९०`
 
->  int add(int x = 0, int y = 0); ❌
+> add a empty line at the end to avoid warning: no newline at end of file
+
+> default value cannot be declared in declaration of function <br>
+>  ❌ `int add(int x = 0, int y = 0);` ❌<br>
+>  🗸🗸 `int add(int x, int y);` <br>
 
 
 
