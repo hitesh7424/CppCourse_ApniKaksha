@@ -45,8 +45,9 @@ This project is _important_ and **urgent**.
 <br>
 
 - Requirements:
-  - gcc
-  - any IDE(like vscode)
+  - gcc  
+    - for windows: `choco install mingw`
+  - [vscode](https://code.visualstudio.com/download)
 
 <br>
 
