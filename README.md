@@ -40,7 +40,7 @@ This project is _important_ and **urgent**.
 
 <br>
 
-## Installation
+## Commands & Software
 
 <br>
 
