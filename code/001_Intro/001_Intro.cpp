@@ -1,7 +1,7 @@
 // learning C++
 // Sum of two Number
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -17,3 +17,4 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+// add a empty line at the end to avoid  "warning: no newline at end of file"

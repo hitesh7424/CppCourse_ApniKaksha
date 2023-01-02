@@ -49,7 +49,7 @@ void selectionSort(int arr[], int size)
     // std::cout << "time Complexity for size=" << size << " :" << timeComplexity << std::endl;
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
 
     int size = 0;
