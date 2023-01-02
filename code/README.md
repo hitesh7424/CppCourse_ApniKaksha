@@ -42,7 +42,7 @@
 
   - [008-01_introductionToArrays.cpp](./008_arrays-sorting-subarrays/008-01_introductionToArrays.cpp)
   - [008-02_searchingInArraysLinearAndBinary.cpp](./008_arrays-sorting-subarrays/008-02_searchingInArraysLinearAndBinary.cpp)
-  - [008-03-01_sortingInArrays](./008_arrays-sorting-subarrays/008-03-01_sortingInArrays/)
+  - [008-03_sortingInArrays](./008_arrays-sorting-subarrays/008-03_sortingInArrays/)
     - [008-03-01_sortingInArraysSelectionSort.cpp](./008_arrays-sorting-subarrays/008-03-01_sortingInArrays/008-03-01_sortingInArraysSelectionSort.cpp)
     - [008-03-02_sortingInArraysBubbleSort.cpp](./008_arrays-sorting-subarrays/008-03-01_sortingInArrays/008-03-02_sortingInArraysBubbleSort.cpp)
     - [008-03-03_sortingInArraysInsertionSort.cpp](./008_arrays-sorting-subarrays/008-03-01_sortingInArrays/008-03-03_sortingInArraysInsertionSort.cpp)

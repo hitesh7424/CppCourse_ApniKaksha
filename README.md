@@ -30,6 +30,8 @@ This project is _important_ and **urgent**.
 
 ## Introduction
 
+> [INDEX](./code/README.md)
+
 > Language: C++
 
 > YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
