@@ -47,6 +47,7 @@ This project is _important_ and **urgent**.
 - Requirements:
   - gcc  
     - for windows: `choco install mingw`
+    - for linux: `already installed`
   - [vscode](https://code.visualstudio.com/download)
 
 <br>
