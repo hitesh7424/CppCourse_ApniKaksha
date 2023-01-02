@@ -1,6 +1,6 @@
 # INDEX
 
-- 001_Intro
+- [001_Intro](./001_Intro/)
 
   - 001-2_HelloGuys.cpp
   - 001_Intro.cpp
