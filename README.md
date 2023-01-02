@@ -32,7 +32,7 @@ This project is _important_ and **urgent**.
 
 > [INDEX](./code/README.md)
 
-> Language: C++
+> Language: [C++](https://isocpp.org/)
 
 > YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
 
