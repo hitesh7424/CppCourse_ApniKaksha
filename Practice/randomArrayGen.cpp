@@ -58,13 +58,30 @@ int binarySearch(int arr[], int size, int key)
     return -1;
 }
 
-void randomArrayGen(int array[], int size)
+void randomArrayGen(int array[], int size, int min = 0, int max = 1000)
 {
 
     srand(time(NULL));
     for (size_t i = 0; i < size; i++)
     {
-        array[i] = rand() % size;
+        array[i] = rand() % (max + 1);
+        if (array[i] < min)
+        {
+            i--;
+            continue;
+        }
+
+        if (i < abs(min - max)+1)
+        {
+            for (size_t j = 0; j < i; j++)
+            {
+                if (array[i] == array[j])
+                {
+                    i--;
+                    continue;
+                }
+            }
+        }
     }
 }
 
@@ -99,7 +116,7 @@ void arrayPrinter(int array[], int size)
 
 int main()
 {
-    const int size = 25;
+    const int size = 10;
     // std::cout << "Size of array: ";
     // std::cin >> size;
     int array[size];

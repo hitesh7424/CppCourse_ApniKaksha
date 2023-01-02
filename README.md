@@ -62,5 +62,11 @@ g++ filenme.cpp -o filenme && ./filename
 
 ## Important
 
-- `१२३४५६७८९०`
-- add a empty line at the end to avoid warning: no newline at end of file
+>  `१२३४५६७८९०`
+2. add a empty line at the end to avoid warning: no newline at end of file
+3. default value cannot be declared in declaration of function
+
+>  int add(int x = 0, int y = 0); ❌
+
+
+
