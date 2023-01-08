@@ -137,7 +137,6 @@ void bubbleSort(int arr[], int size)
     }
 }
 
-
 // Insertion Sort
 /*
 # Insertion Sort
@@ -194,7 +193,8 @@ int main()
     // }
 
     // selectionSort(array, size);
-    bubbleSort(array, size);
+    // bubbleSort(array, size);
+    insertionSort(array, size);
 
     for (size_t i = 0; i < size; i++)
     {
