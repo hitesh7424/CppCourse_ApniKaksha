@@ -1,34 +1,5 @@
 // Searching In Arrays
-// Linear and Binary Search
-
-/*
-
-# Linear Search
-
-{ 12, 18, 20, 42, 8, 10}
-key = 8;
-
-searching one by one
-if it matches returns the index
-
-Time Complexity : O(size Of Array)
-
-*/
-
-#include <iostream>
-
-int linearSearch(int arr[], int size, int key)
-{
-    // Time Complexity : O(n)
-    for (size_t i = 0; i < size; i++)
-    {
-        if (arr[i] == key)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
+// Binary Search
 
 /*
 
@@ -64,16 +35,7 @@ Time Complexity of Binary Search:
 
 */
 
-/*
-# Conclusion
-
-Binary search is more efficient than Linear Search
-as it takes less time
-
-log2(n) << n
-
-
-*/
+#include <iostream>
 
 int binarySearch(int arr[], int size, int key)
 {
@@ -119,7 +81,6 @@ int main()
     // std::cout << "Enter key" << std::endl;
     std::cin >> key;
 
-    std::cout << "linearSearch :" << linearSearch(array, size, key) << std::endl;
     std::cout << "binarySearch :" << binarySearch(array, size, key) << std::endl;
 
     return 0;

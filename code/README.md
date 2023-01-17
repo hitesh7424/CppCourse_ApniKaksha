@@ -38,9 +38,12 @@
 
   - [007-1_timeComplexity.cpp](./007_timeComplexity/007-1_timeComplexity.cpp)
 
-- [008_arrays-sorting-subarrays](./008_arrays-sorting-subarrays/)
+<details>
+<summary href="./008_arrays-sorting-subarrays/"> [008_arrays-sorting-subarrays](./008_arrays-sorting-subarrays/) </summary>
 
   - [008-01_introductionToArrays.cpp](./008_arrays-sorting-subarrays/008-01_introductionToArrays.cpp)
-  - [008-02_searchingInArraysLinearAndBinary.cpp](./008_arrays-sorting-subarrays/008-02_searchingInArraysLinearAndBinary.cpp)
-  - [008-03_sortingInArraysSelectionBubbleInsertionSort.cpp](./008_arrays-sorting-subarrays/008-03_sortingInArraysSelectionBubbleInsertionSort.cpp)
-  - [008-04_arrayChallenges.cpp](./008_arrays-sorting-subarrays/008-04_arrayChallenges.cpp)
+  - [008-02_searchingInArray/](./008_arrays-sorting-subarrays/008-02_searchingInArray/)
+  - [008-03_SortingAlgorithms/](./008_arrays-sorting-subarrays/008-03_SortingAlgorithms/)
+  - [008-04_arrayChallenges/](./008_arrays-sorting-subarrays/008-04_arrayChallenges/)
+  - [008-05_arraysQsAskedByTopMNC/](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/)
+</details>
