@@ -1,3 +1,4 @@
 # find . -name *.exe
+# find .  -name *.cph/
 # find . -name tempCodeRunnerFile.exe
-# rm $(find . -name *.exe)
+# rm $(find . -name *.exe) $(find .  -name *.cph)
