@@ -75,7 +75,7 @@
 >       > 5. [arraysQsAskedByTopMNC/](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/) 
 >       >     > 1. [Q1.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/01_Q1.cpp) 
 >       >     > 2. [Q2.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/02_Q2.cpp)
->       >     > 3. [Q1.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/03_Q3.cpp) 
+>       >     > 3. [Q3.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/03_Q3.cpp) 
 >       > 
 >       > 
 >       > 6. [subarraysQsAskedByTopMNC/](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/) 
