@@ -73,6 +73,19 @@
 >       > 
 >       > 
 >       > 5. [arraysQsAskedByTopMNC/](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/) 
->       >     > 1. [Q1.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/Q1.cpp) 
->       >     > 2. [Q2.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/Q2.cpp)
+>       >     > 1. [Q1.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/01_Q1.cpp) 
+>       >     > 2. [Q2.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/02_Q2.cpp)
+>       >     > 3. [Q1.cpp](./008_arrays-sorting-subarrays/008-05_arraysQsAskedByTopMNC/03_Q3.cpp) 
+>       > 
+>       > 
+>       > 6. [subarraysQsAskedByTopMNC/](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/) 
+>       >     > 1. [Q1.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/01_subarrayR.cpp) 
+>       >     > 2. [Q2.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/02_Q1.cpp)
+>       >     > 3. [Q3.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/03_Q2.cpp) 
+>       >     > 4. [Q4.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/04_Q3.cpp)
+>       >     > 5. [Q5.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/05_Q4.cpp)
+>       >     > 6. [Q6.cpp](./008_arrays-sorting-subarrays/008-06_subarraysQsAskedByTopMNC/06_Q5.cpp)
+>
+>
+> 8. [2DArrays/](./009_2DArrays/)
 

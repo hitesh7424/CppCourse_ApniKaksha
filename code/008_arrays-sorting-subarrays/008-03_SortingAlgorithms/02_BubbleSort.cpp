@@ -63,7 +63,7 @@ if they are in wrong order
 
 ५.
     8,  12, 19, 23, 45, 51
-    ------
+    ------  __< spare last one
 
 finally sorted => 8,  12, 19, 23, 45, 51
 

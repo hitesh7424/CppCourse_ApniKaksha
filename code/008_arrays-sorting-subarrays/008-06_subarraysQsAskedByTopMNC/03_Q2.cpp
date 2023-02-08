@@ -67,17 +67,34 @@ void maxSumOfSubarrayn2(int arr[], int size) // TimeComplexity of O(n²)
     std::cout << maxSum << "\n";
 }
 
-/* ChatGPT approach */
+/*
+# KADANE's algorithm
+
+Array    [-1  4 -6  7 -4]
+
+if curr sum is negative then curr sum becomes 0
+
+            +4  -6   +7  -4
+Curr Sum  -1  4   -2   7   3
+           =0      =0
+
+max sum will store max current sum
+
+*/
 void maxSumOfSubarrayn(int arr[], int size) // TimeComplexity of O(n)
 {
     int maxSum = INT_MIN, currSum = 0;
 
     for (size_t i = 0; i < size; i++)
     {
-        currSum = std::max(arr[i], currSum + arr[i]);
+        if (currSum < 0)
+        {
+            currSum = 0;
+        }
+
+        currSum += arr[i];
         maxSum = std::max(maxSum, currSum);
     }
-
     std::cout << maxSum << "\n";
 }
 
@@ -94,8 +111,8 @@ int main()
     }
 
     // maxSumOfSubarrayn3(a, n);
-    maxSumOfSubarrayn2(a, n);
-    // maxSumOfSubarrayn(a, n);
+    // maxSumOfSubarrayn2(a, n);
+    maxSumOfSubarrayn(a, n);
 
     return 0;
 }
