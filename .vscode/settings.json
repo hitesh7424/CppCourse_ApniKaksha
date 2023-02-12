@@ -18,14 +18,16 @@
   "explorer.confirmDelete": false,
   "git.autofetch": true,
   "git.confirmSync": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.clearPreviousOutput": true,
   "editor.codeActionsOnSave": {},
   "code-runner.executorMap": {
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    //"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dirWithoutTrailingSlash && g++ $fileName -o $fileNameWithoutExt && echo && ./$fileNameWithoutExt"
+    // for 'cmd'
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // for 'git bash'
+    // "cpp": "cd $dirWithoutTrailingSlash && g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt" // for 'git bash'
   },
   "editor.quickSuggestions": {
     "strings": true,
