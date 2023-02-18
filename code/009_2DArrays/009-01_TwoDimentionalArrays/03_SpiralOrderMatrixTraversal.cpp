@@ -43,7 +43,9 @@ Input 1:
 
 
 Output 2:
-
+ 2 3
+8 9 4
+7 6 5
 
 Input 1:
 5 6
@@ -60,12 +62,11 @@ Output 2:
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
     int n, m;
     cin >> n >> m;
-    int arr[n][m]; // Declaring 2d array
+    int arr[n][m]; // Declared 2d array
 
     // Taking input for 2d aray
     for (int i = 0; i < n; i++)
@@ -87,38 +88,70 @@ int main()
     //     cout << "\n";
     // }
 
+    /*
 
-    int row_start = 0, row_end = n - 1, column_start = 0, column_end = m - 1;
+                top
+            ┌───┬───┬───┐
+            │ 1 → 2 → 3 │
+            ├───┼───┼─↓─┤
+      left  │ 8 → 9 │ 4 │   right
+            ├─↑─┼───┼─↓─┤
+            │ 7 ← 6 ← 5 │
+            └───┴───┴───┘
+                bottom
 
-    while (row_start <= row_end && column_start <= column_end)
+    */
+
+    int rows = n, colms = m;
+
+    int top = 0, bottom = rows - 1, left = 0, right = colms - 1;
+    int direction = 1;
+
+    while (top <= bottom && left <= right)
     {
-        // for row_start
-        for (size_t col = column_start; col <= column_end; col++)
+        if (direction == 1)
         {
-            cout << arr[row_start][col] << " ";
-        }
-        row_start++;
 
-        // for column_end
-        for (size_t row = row_start; row <= row_end; row++)
-        {
-            cout << arr[row][column_end] << " ";
+            for (int i = left; i <= right; i++)
+            {
+                cout << arr[top][i] << " ";
+            }
+            top++;
+            direction = 2;
         }
-        column_end--;
 
-        // for row_end
-        for (size_t col = column_end; col >= column_start; col--)
+        else if (direction == 2)
         {
-            cout << arr[row_end][col] << " ";
-        }
-        row_end--;
 
-        // for column_start
-        for (size_t row = row_end; row >= row_start; row--)
-        {
-            cout << arr[row][column_start] << " ";
+            for (int i = top; i <= bottom; i++)
+            {
+                cout << arr[i][right] << " ";
+            }
+            right--;
+            direction = 3;
         }
-        column_start++;
+
+        else if (direction == 3)
+        {
+
+            for (int i = right; i >= left; i--)
+            {
+                cout << arr[bottom][i] << " ";
+            }
+            bottom--;
+            direction = 4;
+        }
+
+        else if (direction == 4)
+        {
+
+            for (int i = bottom; i >= top; i--)
+            {
+                cout << arr[i][left] << " ";
+            }
+            left++;
+            direction = 1;
+        }
     }
 
     return 0;
