@@ -76,6 +76,6 @@ g++ filenme.cpp -o filenme && ./filename
 > 1. define a constant variable with #define variable_name value <br>
 > 2. defined variable should be used in function arguments instead of a value <br>
 >
-> `#define N 1000` <br>
-> `void func1(arr[][N]){}`
+>     > #define N 1000 <br>
+>     > void func1(arr[][N]){}
 
