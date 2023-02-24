@@ -79,6 +79,6 @@ code/
     │
     └───009-02_2DArrayChallengesAskedByTopMC
             01_Q1_MatrixTranspose.cpp
-            02_Q2.cpp
-            03_Q3.cpp
+            02_Q2_MatrixMultiplication.cpp
+            03_Q3_MatrixSearch.cpp
 ```

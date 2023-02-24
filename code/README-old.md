@@ -97,7 +97,7 @@
 >       >
 >       > 2. [2DArrayChallengesAskedByTopMC/](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/)
 >       >     > 1.[Q1_MatrixTranspose.cpp](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/01_Q1_MatrixTranspose.cpp)
->       >     > 2.[Q2.cpp](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/02_Q2.cpp)
->       >     > 3.[Q3.cpp](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/03_Q3.cpp)
+>       >     > 2.[Q2.cpp](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/02_Q2_MatrixMultiplication.cpp)
+>       >     > 3.[Q3.cpp](./009_2DArrays/009-02_2DArrayChallengesAskedByTopMC/03_Q3_MatrixSearch.cpp)
 >
 
