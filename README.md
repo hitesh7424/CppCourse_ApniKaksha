@@ -68,9 +68,16 @@ g++ filenme.cpp -o filenme && ./filename
 
 > add a empty line at the end to avoid warning: no newline at end of file
 
-> default value cannot be declared in declaration of function <br>
+> default value cannot be assigned in declaration of function <br>
+>
 >  ❌ `int add(int x = 0, int y = 0);` ❌<br>
 >  🗸🗸 `int add(int x, int y);` <br>
+>  🗸🗸 `int add(int x = 0, int y = 0){ return 0;}`
 
-
+> To pass matrix to a function
+> 1. define a constant variable with #define variable_name value <br>
+> 2. defined variable should be used in function arguments instead of a value <br>
+>
+> `#define N 1000` <br>
+> `void func1(arr[][N]){}`
 
