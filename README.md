@@ -30,7 +30,7 @@ This project is _important_ and **urgent**.
 
 ## Introduction
 
-> <img src="./src/cpp_128x128.png" height="20">
+> <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/cpp/cpp.svg" height="20">
 
 > YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
 
