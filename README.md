@@ -30,7 +30,7 @@ This project is _important_ and **urgent**.
 
 ## Introduction
 
-> <img src="./src/cpp.svg" height="20">
+> <img src="./src/cpp_128x128.png" height="20">
 
 > YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
 
