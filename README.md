@@ -30,9 +30,7 @@ This project is _important_ and **urgent**.
 
 ## Introduction
 
-> [INDEX](./code/README.md)
-
-> Language: [C++](https://isocpp.org/)
+> <img src="./src/cpp.svg" height="20">
 
 > YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
 
