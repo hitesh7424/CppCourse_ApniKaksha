@@ -3,8 +3,10 @@
 # find . -name tempCodeRunnerFile.exe
 # rm -r $(find . -name *.exe) $(find .  -name *.cph)
 
-# ignore all competitive programming helper folder
+# ignore all  folder
 .cph/
+.vs/
+.vscode/
 
 # ignore all .exe files
 *.exe

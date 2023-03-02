@@ -32,7 +32,7 @@ This project is _important_ and **urgent**.
 
 > <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/cpp/cpp.svg" height="50">
 
-> YT Channel: [@ApnaCollegeOfficial](https://m.youtube.com/@ApnaCollegeOfficial)
+> YT Channel: [Apna College](https://m.youtube.com/@ApnaCollegeOfficial)
 
 > Video Playlist: [C++ Full Course](https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ)
 
@@ -62,7 +62,7 @@ g++ filenme.cpp -o filenme && ./filename
 
 ## Important
 
-> Hindi Digits: `१२३४५६७८९०`
+> Hindi Digits: ` "१२३४५६७८९०" `
 
 > add a empty line at the end to avoid warning: no newline at end of file
 
