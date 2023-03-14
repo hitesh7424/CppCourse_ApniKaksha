@@ -40,7 +40,7 @@ int main()
 
     matrix_Printer(matrix, row, column);
 
-    char result[][5] = {"✗", "✓", "⚜"};
+    char result[][20] = {"❎", "✅", "❇️"};
 
     /*
     // property lister
@@ -55,14 +55,14 @@ int main()
 
     cout << "\nProperties of given matrix:" << endl;
 
-    cout << "[" << result[2] << "] row x column => " << row << " x " << column << endl;
-    cout << "[" << result[2] << "] Order => m x n => " << row * column << endl;
+    cout << result[2] << "row x column => " << row << " x " << column << endl;
+    cout << result[2] << "Order => m x n => " << row * column << endl;
 
-    cout << "[" << result[is_Null_Matrix(matrix, row, column)] << "] Null or Zero Matrix" << endl;
-    cout << "[" << result[is_Row_Matrix(matrix, row, column)] << "] Row Matrix" << endl;
-    cout << "[" << result[is_Column_Matrix(matrix, row, column)] << "] Column Matrix" << endl;
-    cout << "[" << result[is_Square_Matrix(matrix, row, column)] << "] Square Matrix" << endl;
-    cout << "[" << result[is_Rectangle_Matrix(matrix, row, column)] << "] Rectangle Matrix" << endl;
+    cout << result[is_Null_Matrix(matrix, row, column)] << "Null or Zero Matrix" << endl;
+    cout << result[is_Row_Matrix(matrix, row, column)] << "Row Matrix" << endl;
+    cout << result[is_Column_Matrix(matrix, row, column)] << "Column Matrix" << endl;
+    cout << result[is_Square_Matrix(matrix, row, column)] << "Square Matrix" << endl;
+    cout << result[is_Rectangle_Matrix(matrix, row, column)] << "Rectangle Matrix" << endl;
 
     return 0;
 }
