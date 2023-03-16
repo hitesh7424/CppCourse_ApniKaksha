@@ -5,18 +5,29 @@
  */
 
 /*
-Input:
+Input1:
 20
 Do od die diet
 
-Output:
-4
+Output1:
 diet
+4
+
+
+Input2:
+100
+In this example, we declare a char array str with a length of 20 and initialize it with the
+
+Output2:
+initialize
+10
 
 */
 
 #include <iostream>
 using namespace std;
+
+void find_Largest_Word(const char *sentence, char *largest_word, int &largest_word_length);
 
 int main()
 {
@@ -29,13 +40,26 @@ int main()
     cin.getline(arr, n);
     cin.ignore();
 
+    char largest_word[50]; // create character array to hold largest word
+    int largest_word_length = 0;
+
+    find_Largest_Word(arr, largest_word, largest_word_length);
+
+    std::cout << largest_word << std::endl;
+    std::cout << largest_word_length << std::endl;
+
+    return 0;
+}
+
+void find_Largest_Word(const char *sentence, char *largest_word, int &largest_word_length)
+{
     int i = 0;
     int st = 0, maxst = 0;
     int currLen = 0, maxLen = 0;
 
     while (true)
     {
-        if (arr[i] == ' ' or arr[i] == '\0')
+        if (sentence[i] == ' ' || sentence[i] == '\0')
         {
             if (maxLen < currLen)
             {
@@ -50,20 +74,19 @@ int main()
             currLen++;
         }
 
-        if (arr[i] == '\0')
+        if (sentence[i] == '\0')
         {
             break;
         }
         i++;
     }
 
-    cout << maxLen << endl;
+    largest_word_length = maxLen;
 
     for (int i = 0; i < maxLen; i++)
     {
-        cout << arr[i + maxst];
+        largest_word[i] = sentence[i + maxst];
     }
-    cout << endl;
 
-    return 0;
+    largest_word[maxLen] = '\0'; // add null terminator to largest word string
 }
