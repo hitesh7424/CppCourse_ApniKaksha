@@ -5,8 +5,6 @@
 
 # ignore all  folder
 .cph/
-.vs/
-.vscode/
 
 # ignore all .exe files
 *.exe
