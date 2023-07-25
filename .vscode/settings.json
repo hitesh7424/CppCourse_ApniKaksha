@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp"
+    },
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.runInTerminal": false,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.fileDirectoryAsCwd": false
+}
