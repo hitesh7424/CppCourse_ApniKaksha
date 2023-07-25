@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
     cout << getBit(5, 2) << endl;
     cout << setBit(5, 1) << endl;
     cout << clearBit(5, 2) << endl;
-    cout << updateBit(5, 1, 1) << endl;
+    cout << updateBit(5, 1, 0) << endl;
 
     return 0;
 }
