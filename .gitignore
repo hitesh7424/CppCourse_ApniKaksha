@@ -9,3 +9,5 @@
 # ignore all .exe files
 *.exe
 *.out
+
+test
